@@ -1,4 +1,4 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
+document.getElementsByClassName('login-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission
 
   // Get the values of the input fields
