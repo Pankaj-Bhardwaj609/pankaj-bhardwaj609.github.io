@@ -1,7 +1,4 @@
-$(".message a").click(function () {
-   $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
- });
- document.getElementById('login-form').addEventListener('login', function(event) {
+document.getElementById('login-form').addEventListener('login', function(event) {
   event.preventDefault(); // Prevent the default form submission
 
   // Get the values of the input fields
@@ -21,4 +18,7 @@ $(".message a").click(function () {
       // Display an error message if the credentials are incorrect
       document.getElementById('message').innerText = "Invalid username or password. Please try again.";
   }
+});
+$(".message a").click(function () {
+  $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
 });
