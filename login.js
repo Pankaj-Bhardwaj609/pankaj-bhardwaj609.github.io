@@ -1,7 +1,7 @@
 $(".message a").click(function () {
    $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
  });
- document.getElementById('loginForm').addEventListener('submit', function(event) {
+ document.getElementById('login-form').addEventListener('login', function(event) {
   event.preventDefault(); // Prevent the default form submission
 
   // Get the values of the input fields
