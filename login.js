@@ -1,4 +1,4 @@
-document.getElementsByClassName('login-form').addEventListener('submit', function(event) {
+document.querySelector('.login-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission
 
   // Get the values of the input fields
@@ -11,7 +11,7 @@ document.getElementsByClassName('login-form').addEventListener('submit', functio
 
   // Check if the entered credentials match the hardcoded ones
   if (username === correctUsername && password === correctPassword) {
-      document.getElementById('message').innerText="Welcome";
+      document.getElementById('message').innerText = "Welcome";
       // Redirect to a new page if the credentials are correct
       window.location.href = "home.html";
   } else {
@@ -19,6 +19,7 @@ document.getElementsByClassName('login-form').addEventListener('submit', functio
       document.getElementById('message').innerText = "Invalid username or password. Please try again.";
   }
 });
+
 $(".message a").click(function () {
   $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
 });
