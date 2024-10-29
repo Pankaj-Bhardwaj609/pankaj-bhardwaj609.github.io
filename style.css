@@ -158,10 +158,12 @@ html {
   margin-top: -60px;
   padding-left: 10px;
 }
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
+#title span { 
+  background: linear-gradient(white, #38495a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @keyframes animStar {
