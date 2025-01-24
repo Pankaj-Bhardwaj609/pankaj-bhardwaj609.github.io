@@ -31,6 +31,11 @@ document.querySelector('.register-form').addEventListener('submit', function(eve
   var password = event.target.querySelector('input[placeholder="password"]').value;
   var email = event.target.querySelector('input[placeholder="email address"]').value;
 
+  // Validate email format
+  if (!email.includes('@') || !email.includes('.')) {
+      document.getElementById('message').innerText = "Invalid email format. Please include '@'.";
+      return;
+  }
   // Get stored users from local storage
   var users = JSON.parse(localStorage.getItem('users')) || [];
 
