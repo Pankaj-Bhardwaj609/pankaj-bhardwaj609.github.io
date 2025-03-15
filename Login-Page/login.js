@@ -15,7 +15,7 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
   if (user) {
       document.getElementById('message').innerText = "Welcome";
       // Redirect to a new page if the credentials are correct
-      window.location.href = "home.html";
+      window.location.href = "../HomePage/home.html";
   } else {
       // Display an error message if the credentials are incorrect
       document.getElementById('message').innerText = "Invalid username or password. Please try again.";

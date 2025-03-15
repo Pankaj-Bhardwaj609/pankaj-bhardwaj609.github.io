@@ -1,0 +1,27 @@
+.navbar-nav .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu.show {
+  display: block;
+  opacity: 3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.marquee {
+  width: 100%;
+  /* Full width */
+  text-align: center;
+  /* Center text */
+}
